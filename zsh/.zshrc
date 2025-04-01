@@ -106,6 +106,7 @@ source $ZSH/oh-my-zsh.sh
 #
 # Aliases
 alias chjav="alternatives --config java"
+alias tesis="/mnt/01DB43A699666BA0/CommuPics/"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #

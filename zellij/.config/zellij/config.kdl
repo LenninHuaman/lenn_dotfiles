@@ -1,3 +1,15 @@
+theme "onedark"
+pane_frames false
+simplified_ui false
+hide_session_name true
+scroll_buffer_size 5000
+rounded_corners false
+mouse_mode true
+session_serializatio true
+copy_on_select true
+default_layout "compact"
+default_mode "normal"
+
 keybinds clear-defaults=true {
     normal {
         bind "Alt m" { SwitchToMode "Move"; }
