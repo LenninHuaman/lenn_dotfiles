@@ -19,9 +19,24 @@ end
 lspconfig.basedpyright.setup({
 	capabilities = nvlsp.capabilities,
 	settings = {
+		disableOrganizeImports = true,
 		basedpyright = {
 			analysis = {
-				typeCheckingMode = "basic",
+				ignore = { "*" },
+				typeCheckingMode = "standard",
+				diagnosticMode = "openFilesOnly",
+				useLibraryCodeForTypes = true,
+			},
+		},
+	},
+})
+
+require("lspconfig").ruff.setup({
+	init_options = {
+		settings = {
+			lint = {
+				enable = false,
+				preview = true,
 			},
 		},
 	},
